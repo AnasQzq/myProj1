@@ -1,18 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="#000000"
+        android:gravity="center|right|top"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center|top"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Champions League"
+        android:textColor="#777777"
+        android:textSize="40dp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/bad_script"
+        android:text="AND"
+        android:textColor="#FF0000"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="World Cup"
+        android:textColor="#FFC107"
+        android:textSize="40dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:fontFamily="monospace"
+        android:text="SELECT THE CHAMPIONSHIP :"
+        android:textColor="#03A9F4"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/butCH"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:text="Champions League"
+        android:textColor="#CCCCCC"
+        app:iconGravity="start"
+        tools:ignore="DuplicateIds"
+        android:onClick="next"/>
+
+    <Button
+        android:id="@+id/butWC"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="World Cup"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#FF1D1D"
+        app:iconGravity="start"
+        android:onClick="next2"/>
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Small"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:text="your expectation"
+        android:textColor="#FFC107"
+        android:textColorHighlight="#FF1D1D"
+        app:iconGravity="start"
+        android:onClick="next3"/>
+    </LinearLayout>
+
+</ScrollView>

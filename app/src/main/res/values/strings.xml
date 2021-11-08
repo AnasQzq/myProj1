@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">myProj1</string>
+    <string name="app_name">FirstAssg</string>
+    <string name="str">Choose your team and predict the year it will win</string>
 </resources>
